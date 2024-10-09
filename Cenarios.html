@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Librelato</title>
+    <style>
+      /* Adicione seu CSS aqui */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      body {
+        box-sizing: border-box;
+        font-size: 1.6rem;
+        background-color: rgb(24, 27, 30);
+        color: #fff;
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+        position: relative; /* Para permitir o posicionamento absoluto do botão */
+      }
+      .logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+      .logo img {
+        height: 50px;
+      }
+      .back-button {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        background-color: #008cd6; /* Cor de fundo do botão */
+        color: white;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.6rem;
+      }
+      .back-button:hover {
+        background-color: #ffffff;
+        color: #008cd6; /* Cor ao passar o mouse */
+      }
+      iframe {
+        width: 900px;
+        height: 550px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="Librelato - Cromada - Horizontal.png" alt="LBT" />
+    </div>
+
+    <a
+    href="file:///C:/Users/marcos.ramos/Desktop/INTELIGENCIA%20COMERCIAL/PROFISSIONAIS/MARCOS%20CESAR/LIBRELATO/HTMLL&CSS/INTRODU%C3%87%C3%83O%20AO%20HTML/Dashboards.html"
+    ><button class="back-button" onclick="goBack()">Voltar</button></a
+
+    <div>
+      <iframe
+        title="Cotação_Safra"
+        src="https://app.powerbi.com/view?r=eyJrIjoiY2U4ZjYwN2ItMDYzNC00MTRkLTk3ZTUtMzI0NTZlZDc3MWFlIiwidCI6IjVlMTUyYWRjLTNiZjYtNGUwNy1hODE3LTk4ZmVkOTE0MmFiZCJ9"
+        allowfullscreen="true"
+      ></iframe>
+    </div>
+
+    <script>
+      function goBack() {
+        window.history.back(); // Volta para a página anterior
+      }
+    </script>
+  </body>
+</html>
